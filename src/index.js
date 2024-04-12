@@ -1,38 +1,32 @@
+
 import express from "express";
-import url from "url"
-
-const app  = express()
+const app = express();
 const port = 3000
-const __dirname = url.fileURLToPath(new URL('.', import.meta.url));
 
-app.get('/', (req, res) => {
-  // res.send('Hello World!')
-  // res.json({
-  //   nama:"Pokemon",
-  //   jenis:"Tanaman"
-  // })
-  res.sendFile("./page/index.html", { root: __dirname })
+app.get("/", (req, res) => {
+    res.send ("Hello World!")
 })
 
-app.get('/about', (req, res) => {
-  res.sendFile("./page/about.html", { root: __dirname })
-})
-app.get('/contact', (req, res) => {
-  res.sendFile("./page/contact.html", { root: __dirname })
+app.get("/barangs", (req, res) => {
+    res.send("ini halaman barangs")
 })
 
-app.get('/barang/:id', (req, res) => {
-  const id = req.params.id
-  // dengan tandanya misal: /barand/:1?kategori=sepatu
-  const name = req.query.kategori
-  res.send(`Ini halaman dengan id ${id} dengan kategori ${name}`)
+app.post("/barangs", (req, res) => {
+    res.send("ini post barangs")
 })
 
-app.use("*",(req,res)=>{
-  res.status(404)
-  res.sendFile("./page/404.html", { root: __dirname })
+app.put("/barangs", (req, res) => {
+    res.send("ini put barangs")
+})
+
+app.delete ("/barangs", (req, res) => {
+    res.send("ini delete barangs")
+})
+
+app.all('/barangs', (req, res) => {
+  res.send('ini all barangs')
 })
 
 app.listen(port, () => {
-  console.log(`Example app listening on port ${port}`)
+    console.log(`Example app listening on port ${port}`)
 })

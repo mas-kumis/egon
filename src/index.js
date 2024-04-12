@@ -21,6 +21,12 @@ app.get('/contact', (req, res) => {
   res.sendFile("./page/contact.html", { root: __dirname })
 })
 
+app.get('/barang/:id', (req, res) => {
+  console.log(req.params)
+  const name = req.params.id
+  res.send(`Ini halaman dengan id ${name}`)
+})
+
 app.use("*",(req,res)=>{
   res.status(404)
   res.sendFile("./page/404.html", { root: __dirname })

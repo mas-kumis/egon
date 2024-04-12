@@ -22,9 +22,10 @@ app.get('/contact', (req, res) => {
 })
 
 app.get('/barang/:id', (req, res) => {
-  console.log(req.params)
-  const name = req.params.id
-  res.send(`Ini halaman dengan id ${name}`)
+  const id = req.params.id
+  // dengan tandanya misal: /barand/:1?kategori=sepatu
+  const name = req.query.kategori
+  res.send(`Ini halaman dengan id ${id} dengan kategori ${name}`)
 })
 
 app.use("*",(req,res)=>{

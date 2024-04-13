@@ -7,26 +7,26 @@ app.get("/", (req, res) => {
     res.send ("Hello World!")
 })
 
-
-app.get("/barangs", (req, res) => {
+app.route("/barangs")
+.get((req, res) => {
     res.send("ini halaman semua barangs")
 })
-
-app.get("/barangs/:id", (req, res) => {
-    res.send("ini halaman barangs dengan id: " + req.params.id)
-})
-
-app.post("/barangs", (req, res) => {
+.post((req, res) => {
     res.send("ini post barangs")
 })
+.delete((req, res) => {
+    res.send("ini delete barangs")
+})
 
-app.put("/barangs/:id", (req, res) => {
+app.route("/barangs/:id")
+.get( (req, res) => {
+    res.send("ini halaman barangs dengan id: " + req.params.id)
+})
+.put((req, res) => {
     res.send("ini put barangs dengan id " + req.params.id)
 })
 
-app.delete ("/barangs", (req, res) => {
-    res.send("ini delete barangs")
-})
+
 
 app.all('/barangs', (req, res) => {
   res.send('ini all barangs')

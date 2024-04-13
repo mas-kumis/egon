@@ -5,6 +5,7 @@ import barangRouter from "./barang.js";
 router.use("/",(req,res)=>{
     const data = {
         title : "Ini adalah title",
+        layout:"layout/main-layout",
         data: [
             {id:100,nama:'Baju' },
             {id:200,nama:'Sepatu' },

@@ -1,35 +1,16 @@
-
 import express from "express";
 const app = express();
 const port = 3000
 
-import router from "./route/index.js"
-app.get("/", (req, res) => {
-    res.send ("Hello World!")
-})
+import router from "./routes/index.js"
+import path from "path"
+import url from "url"
+
+const __dirname = url.fileURLToPath(new URL('.', import.meta.url));
+app.set("views", path.join(__dirname, "views"))
+app.set("view engine", "ejs")
 
 app.use(router)
-
-
-// app.get("/random.text", (req, res) => {
-//     res.send("ini random text")
-//     })
-
-// app.get("/ab?cd", (req,res) =>{
-//     res.send("ini ab?cd")
-//     })
-
-// app.get("/ab+cd", (req,res)=>{
-//     res.send("ini ab+cd")
-// })
-
-// app.get("/ab*cd", (req,res) =>{
-//     res.send("ini ab*cd")
-// })
-
-// app.get(/.*fly$/, (req, res) => {
-//     res.send('/.*fly$/')
-//   })
 
 app.listen(port, () => {
     console.log(`Example app listening on port ${port}`)

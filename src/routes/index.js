@@ -3,7 +3,16 @@ const router = express.Router();
 import barangRouter from "./barang.js";
 
 router.use("/",(req,res)=>{
-    res.render("index")
+    const data = {
+        title : "Ini adalah title",
+        data: [
+            {id:100,nama:'Baju' },
+            {id:200,nama:'Sepatu' },
+            {id:300,nama:"celana"}
+
+        ]
+    }
+    res.render("index", data)
 })
 router.use("/barangs", barangRouter)
 router.use("*", (req, res) => {

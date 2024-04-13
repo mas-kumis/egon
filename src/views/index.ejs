@@ -1,11 +1,20 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    <h1>Hello from EJS</h1>
-</body>
-</html>
+<%- include("header.ejs")  %>
+    <h2>Hello from EJS</h2>
+    <h4>Daftar barang</h4>
+    <table>
+        <tr>
+            <th>No</th>
+            <th>Kode</th>
+            <th>Nama</th>
+        </tr>
+    
+    <% data.forEach((row, no) =>{%>
+        <tr>
+            <td><%= no+1%></td>
+            <td><%= row.id%></td>
+            <td><%= row.nama %></td>
+        </tr>
+
+    <% }) %>
+</table>
+<%-include("footer.ejs") %>

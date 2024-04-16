@@ -1,3 +1,5 @@
+// EJS For Easy CRUD
+
 import express from "express";
 const router = express.Router();
 import barangRouter from "./barang.js";

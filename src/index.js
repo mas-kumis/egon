@@ -3,14 +3,22 @@ const app = express()
 const port = 3000
 
 
-app.get('/', (req,res) => {
-    res.send("Hello World")
+
+app.use((req, res, next) => {
+    console.log("contoh log")
+    next()
+  })
+
+ app.use((req,res,next) => {
+     req.requestTime = new Date()
+     next()
+ })
+
+ app.get('/', (req,res) => {
+    let responText = "Hello World <br>"
+    responText += `Waktu permintaan ${req.requestTime}`
+    res.send(responText)
 })
-// app.use((req, res, next) => {
-//     console.log('Time:', Date.now())
-//   })
-
-
 app.listen (port, () => {
     console.log(`Example app listening on port ${port}`)
 })

@@ -6,9 +6,9 @@ const port = 3000
 app.get('/', (req,res) => {
     res.send("Hello World")
 })
-app.use((req, res, next) => {
-    console.log('Time:', Date.now())
-  })
+// app.use((req, res, next) => {
+//     console.log('Time:', Date.now())
+//   })
 
 
 app.listen (port, () => {

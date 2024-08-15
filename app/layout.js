@@ -1,20 +1,19 @@
-import { Outfit } from "next/font/google";
+import { Sen } from "next/font/google";
 import "./globals.css";
 
-const outfit = Outfit({
+const sen = Sen({
   subsets: ["latin"],
-  weight: ["400", "500", "600", "700"],
+  weight: ["400", "500", "600", "700", "800"],
 });
 export const metadata = {
-  title: "Egon ",
+  title: "Egon by Mas Kumis Dev",
   description: "Egon by Mas Kumis Dev",
 };
 
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <link rel="icon" href="/logo.png" sizes="any" />
-      <body className={outfit.className}>{children}</body>
+      <body className={sen.className}>{children}</body>
     </html>
   );
 }

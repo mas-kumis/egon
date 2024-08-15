@@ -5,6 +5,10 @@ import Feature from "@/components/Feature";
 import Jumbotron from "@/components/Jumbotron";
 import ListAuthor from "@/components/ListAuthor";
 import Navbar from "@/components/Navbar";
+import TrustedBy from "@/components/TrustedBy";
+import Testimonial from "@/components/Testimonial";
+import Join from "@/components/Join";
+import Footer from "@/components/Footer";
 
 export default function Home() {
   return (
@@ -18,6 +22,10 @@ export default function Home() {
       <Aboutus />
       <Category />
       <ListAuthor />
+      <TrustedBy />
+      <Testimonial />
+      <Join />
+      <Footer />
     </main>
   );
 }

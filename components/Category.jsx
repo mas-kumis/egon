@@ -12,7 +12,7 @@ const Category = () => {
         <div className="flex space-x-[20px] w-full">
           <div className="bg-white hover:bg-secondary flex flex-col space-y-[10px] border border-slate-200 px-[20px] py-[20px]">
             <div className="w-[48px] h-[48px] bg-[#FBF6EA] flex items-center justify-center rounded-lg">
-              <Image src="/icon-business.png" />
+              {/* <Image src="/icon-business.png" width={48} height={48} alt="" /> */}
             </div>
             <h3 className="font-bold text-[28px]">Business</h3>
             <p className="text-mediumgrey">

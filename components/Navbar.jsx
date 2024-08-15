@@ -1,4 +1,5 @@
 "use client";
+import Link from "next/link";
 import React, { useState } from "react";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { IoCloseSharp } from "react-icons/io5";
@@ -11,8 +12,12 @@ const Navbar = () => {
         <div className="text-xl font-bold">Egon Blog</div>
         <div className="text-md hidden lg:block">
           <ul className="flex justify-around  space-x-8 items-center">
-            <li>Home</li>
-            <li>Blog</li>
+            <li className="text-white hover:text-secondary">
+              <Link href="/"> Home</Link>
+            </li>
+            <li className="text-white hover:text-secondary">
+              <Link href="/blog"> Blog</Link>
+            </li>
             <li>About Us</li>
             <li>Contact Us</li>
             <li className="bg-white text-primary w-[150px] text-center py-2 font-bold">

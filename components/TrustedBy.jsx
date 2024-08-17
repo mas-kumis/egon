@@ -10,7 +10,7 @@ const TrustedBy = () => {
         <Image src="/brand2.png" alt="" width={136} height={32} />
         <Image src="/brand3.png" alt="" width={135} height={32} />
         <Image src="/brand4.png" alt="" width={153} height={32} />
-        <Image src="/brand5.png" alt="" width={136} height={32} />
+        {/* <Image src="/brand5.png" alt="" width={136} height={32} /> */}
       </div>
     </div>
   );

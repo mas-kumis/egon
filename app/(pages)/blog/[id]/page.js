@@ -1,21 +1,19 @@
-import AllPostBlog from "@/components/AllPostBlog";
-import CategoryBlog from "@/components/CategoryBlog";
+import AuthorPost from "@/components/AuthorPost";
 import Footer from "@/components/Footer";
-import HeaderBlog from "@/components/HeaderBlog";
 import Join from "@/components/Join";
 import Navbar from "@/components/Navbar";
+import ReadNext from "@/components/ReadNext";
 import React from "react";
 
 const page = () => {
   return (
-    <>
+    <div>
       <Navbar />
-      <HeaderBlog />
-      <AllPostBlog />
-      <CategoryBlog />
+      <AuthorPost />
+      <ReadNext />
       <Join />
       <Footer />
-    </>
+    </div>
   );
 };
 

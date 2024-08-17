@@ -18,9 +18,13 @@ const Navbar = () => {
             <li className="text-white hover:text-secondary">
               <Link href="/blog"> Blog</Link>
             </li>
-            <li>About Us</li>
-            <li>Contact Us</li>
-            <li className="bg-white text-primary w-[150px] text-center py-2 font-bold">
+            <li className="text-white hover:text-secondary">
+              <Link href="/aboutus"> About us</Link>
+            </li>
+            <li className="text-white hover:text-secondary">
+              <Link href="/contact"> Contact Us</Link>
+            </li>
+            <li className="bg-white hover:text-primary cursor-pointer hover:bg-secondary text-primary w-[150px] text-center py-2 font-bold">
               {" "}
               Subscribe
             </li>

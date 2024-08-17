@@ -12,7 +12,7 @@ const Category = () => {
         <div className="flex space-x-[20px] w-full">
           <div className="bg-white hover:bg-secondary flex flex-col space-y-[10px] border border-slate-200 px-[20px] py-[20px]">
             <div className="w-[48px] h-[48px] bg-[#FBF6EA] flex items-center justify-center rounded-lg">
-              {/* <Image src="/icon-business.png" width={48} height={48} alt="" /> */}
+              <Image src="/icon-business.png" width={100} height={100} alt="" />
             </div>
             <h3 className="font-bold text-[28px]">Business</h3>
             <p className="text-mediumgrey">
@@ -21,7 +21,7 @@ const Category = () => {
           </div>
           <div className="bg-white hover:bg-secondary flex flex-col space-y-[10px] border border-slate-200 px-[20px] py-[20px]">
             <div className="w-[48px] h-[48px] bg-[#FBF6EA] flex items-center justify-center rounded-lg">
-              <FaRocket />
+              <Image src="/icon-rocket.png" width={30} height={30} alt="" />
             </div>
             <h3 className="font-bold text-[28px]">StartUp</h3>
             <p className="text-mediumgrey">
@@ -30,7 +30,7 @@ const Category = () => {
           </div>
           <div className="bg-white hover:bg-secondary flex flex-col space-y-[10px] border border-slate-200 px-[20px] py-[20px]">
             <div className="w-[48px] h-[48px] bg-[#FBF6EA] flex items-center justify-center rounded-lg">
-              <LuSignalHigh />
+              <Image src="/icon-economy.png" width={100} height={100} alt="" />
             </div>
             <h3 className="font-bold text-[28px]">Economy</h3>
             <p className="text-mediumgrey">
@@ -39,7 +39,7 @@ const Category = () => {
           </div>
           <div className="bg-white hover:bg-secondary flex flex-col space-y-[10px] border border-slate-200 px-[20px] py-[20px]">
             <div className="w-[48px] h-[48px] bg-[#FBF6EA] flex items-center justify-center rounded-lg">
-              <FaRobot />
+              <Image src="/icon-tech.png" width={30} height={30} alt="" />
             </div>
             <h3 className="font-bold text-[28px]">Technology</h3>
             <p className="text-mediumgrey">

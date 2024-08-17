@@ -1,12 +1,14 @@
 import React from "react";
-
+import Image from "next/image";
 const Feature = () => {
   return (
     <div>
       <h2 className="font-bold text-[36px]">Features Post</h2>
       <div className="mt-[60px] mx-[30px] max-w-[669px]">
         {/* Image */}
-        <div className="w-[669px] h-[352px] bg-slate-400"></div>
+        <div className="w-[669px] h-[352px] bg-slate-400">
+          <Image src="/feature.png" alt="" width={669} height={352} />
+        </div>
         <p className="my-[20px] text-[14px]">By John Doe l May 23, 2022</p>
         <h3 className="font-bold text-[28px]">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do

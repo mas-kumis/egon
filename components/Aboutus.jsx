@@ -7,8 +7,8 @@ const Aboutus = () => {
         <div className="bg-white w-full h-full"></div>
         <div className="bg-secondary w-full h-full"></div>
         <div className="bg-secondary w-full h-full"></div>
-        <div className="bg-secondary w-full h-full"></div>
-        <div className="bg-purple w-full h-full"></div>
+        {/* <div className="bg-secondary w-full h-full"></div>
+        <div className="bg-purple w-full h-full"></div> */}
       </div>
       <div className="flex py-[100px] bg-[#F4F0F8]  px-[70px] space-x-[40px]">
         <div className="basis-1/2 space-y-[20px] flex flex-col">
